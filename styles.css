@@ -1,7 +1,7 @@
 :root {
     --primary-color: #adf0d4;
-    --secondary-color: #1fd8a4;
-    --bg-color: #0d1512;
+    --secondary-color: #76ABAE;
+    --bg-color: #222831;
 }
 
 *{
@@ -27,7 +27,7 @@ body {
 }
 
 header, main, footer {
-    max-width: 1400px;
+    max-width: auto;
     margin: 0 auto;
     width: 100%;
 }
