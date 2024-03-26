@@ -324,7 +324,7 @@ section {
     font-size: 0.9em;
 }
 
-@media (min-width: 3000) {
+@media (min-width: 3000px) {
   .grid-container {
     grid-template-areas:
       "box1  box2  box3  box6"
