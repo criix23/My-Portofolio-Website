@@ -12,6 +12,19 @@
    transition-duration: 200ms;
 }
 
+.headerContent{
+  size: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.descriptionText {
+  text-align: center;
+}
+
 .iconSVG {
   width: 20%;
   height: 20%;
@@ -24,38 +37,48 @@
 }
 
 .grid-container {
-  max-width: 1000px;
+  justify-content: center;
+  max-width: 200vrem;
   margin: 1rem;
   display: grid;
   grid-auto-columns: 1fr;
   gap: .5rem;
   grid-template-areas:
-    "box1  box2  box3  box4  box4  box5  box5"
-    "box6  box6  box7  box7  box7  box8  box9"
-    "box10 box11 box7  box7  box7  box8  box9"
-    "box12 box12 box13 box13 box13 box14 box14"
+    "box9  box10  box3  box4  box4  box15  box5"
+    "box1  box1   box7  box7  box7  box13  box12"
+    "box2  box2   box7  box7  box7  box13  box12"
+    "box6  box6   box8  box8  box11  box14  box14"
     ;
  
 }
 
 .grid-item {
   border-radius: 30px;
+  border-radius: 50px;
   background: #222831;
-  box-shadow: inset 12px -12px 24px #1b1f26,
-            inset -12px 12px 24px #29313c;
+  border: solid 2px var(--secondary-color);
+  /* box-shadow: inset -13px -13px 18px #0e1014,
+            inset 13px 13px 18px #36404e; */
   padding: .5rem 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border-radius: .75rem;
   overflow: hidden;
   transition: all 200ms ease;
 }
 
+.bentoIcons {
+  width: 50%;
+}
+
 .grid-item:hover {
   cursor: pointer;
-  background-color: #555;
-  outline: 1px solid #fff;
+  background: #222831;
+  box-shadow: inset -18px -18px 36px #0e1014,
+  inset 18px 18px 36px #36404e;
+  border: solid 1px var(--secondary-color);
 }
 
 .grid-item-1 {
@@ -133,6 +156,19 @@ h2 {
   font-size: 2.0em;
 }
 
+h3 {
+  font-size: 1.5em;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 250%;
+  background: #CFE7FA;
+background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 body {
     background: var(--bg-color);
     color: var(--primary-color);
@@ -203,7 +239,8 @@ section {
 .statsContainer {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    padding-top: 1rem;
+    align-items: center;
     gap: 24px;
 }
 
@@ -260,6 +297,7 @@ section {
 }
 
 .aboutMe {
+  text-align: center;
     line-height: 1.5em;
 }
 
@@ -276,17 +314,24 @@ section {
   .projectItem {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     gap: 24px;
-    margin: 0;
+    
   }
 
   .projectImg {
     margin-left: auto;
-    width: 200px;
+    width: 100%;
     height: auto;
     box-sizing: border-box;
-    margin-right: 0;
+  }
+
+  .imageWrapper {
+   
+  }
+
+  .imageWrapper:hover {
+    box-shadow:  5px 5px 10px #15181c,
+                 -5px -5px 10px #55606e;
   }
 
 
@@ -396,10 +441,15 @@ section {
     }
 } */
 
-.bn13 {
-    display: inline-block;
+.mailButtonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.mailButton {
+    
     padding: 0.3em 0.5em;
-    border: 1px solid var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     margin: 0 2em 2em 0;
     border-radius: 0.5em;
     box-sizing: border-box;
@@ -408,17 +458,19 @@ section {
     font-weight: 300;
     color: var(--secondary-color);
     text-align: center;
-    transition: all 0.5s;
-    animation: bn13bouncy 5s infinite linear;
+    justify-content: center;
+    transition: all 0.2s;
+    animation: mailButtonBouncy 5s infinite linear;
     position: relative;
+    
   }
   
-  .bn13:hover {
+  .mailButton:hover {
     background-color: var(--secondary-color);
     color: #000000;
   }
   
-  @keyframes bn13bouncy {
+  @keyframes mailButtonBouncy {
     0% {
       top: 0em;
     }
