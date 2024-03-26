@@ -19,7 +19,7 @@
 
 .bentoIcons {
   fill: var(--secondary-color);
-  width: 10%;
+  width: 80%;
   margin: auto;
 }
 
@@ -37,7 +37,9 @@
 }
 
 .grid-item {
-  background-color: #444;
+  background: #222831;
+  box-shadow:  20px 20px 60px #1d222a,
+             -20px -20px 60px #272e38;
   padding: .5rem 1rem;
   text-align: center;
   display: flex;
