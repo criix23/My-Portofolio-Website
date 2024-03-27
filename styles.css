@@ -2,6 +2,8 @@
     --primary-color: #adf0d4;
     --secondary-color: #76ABAE;
     --bg-color: #222831;
+    --my-gradient: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+    
 }
 
 *{
@@ -13,7 +15,6 @@
 }
 
 .headerContent{
-  size: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,13 +22,25 @@
   text-align: center;
 }
 
+.homeButton {
+  width: 10vw;
+  height: auto;
+  max-width: 125px;
+}
+
+.homeButton:hover {
+  opacity: 0.8 ;
+}
+
 .descriptionText {
   text-align: center;
 }
 
 .iconSVG {
-  width: 20%;
-  height: 20%;
+  fill: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+
 }
 
 .bentoIcons {
@@ -144,7 +157,7 @@
 }
 
 h1 {
-  font-size: 3.0em;
+  font-size: clamp(50px, 2vw, 80px);
   background: #CFE7FA;
 background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
 -webkit-background-clip: text;
@@ -153,6 +166,7 @@ background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
 }
 
 h2 {
+  color: var(--primary-color);
   font-size: 2.0em;
 }
 
@@ -167,6 +181,16 @@ h4 {
 background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+
+h5 {
+  font-size: clamp(20px, 2vw, 30px);
+  color: var(--primary-color) !important;
+  font-weight: lighter;
+}
+
+.grid-item p {
+  font-weight: 500 !important;
 }
 
 body {
@@ -192,7 +216,7 @@ header, main, footer {
 }
 
 p {
-    font-size: 1.5em;
+  font-size: clamp(15px, 2vw, 30px);
 }
 
 header {
@@ -245,8 +269,8 @@ section {
 }
 
 .imgContainer {
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -298,7 +322,7 @@ section {
 
 .aboutMe {
   text-align: center;
-    line-height: 1.5em;
+  
 }
 
 .projectContainer {
@@ -307,55 +331,55 @@ section {
     gap: 32px;
   }
 
-  .headerText {
-    margin-bottom: 24px;
-  }
+.headerText {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: clamp(20px, 2vw, 30px);
+    
+}
 
-  .projectItem {
+.projectItem {
     display: flex;
     justify-content: space-between;
     gap: 24px;
     
-  }
+}
 
-  .projectImg {
+.projectImg {
     margin-left: auto;
     width: 100%;
     height: auto;
     box-sizing: border-box;
-  }
+}
 
-  .imageWrapper {
-   
-  }
 
-  .imageWrapper:hover {
+.imageWrapper:hover {
     box-shadow:  5px 5px 10px #15181c,
                  -5px -5px 10px #55606e;
-  }
+}
 
 
 
-  .projectItem div:first-child {
+.projectItem div:first-child {
     display: flex;
     flex-direction: column;
     gap: 14px;
-  }
+}
 
-  .projectItem>div:last-child {
+.projectItem>div:last-child {
     aspect-ratio: 16/9;
     max-width: 30%;
     overflow: hidden;
     border-radius: 8px;
-  }
+}
 
-  .projectItem>div:last-child img {
+.projectItem>div:last-child img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: flex;
     flex-direction: column;
-  }
+}
 
 
 .linkContainer {
@@ -383,7 +407,6 @@ section {
     cursor: pointer;
 }
 
-
 .linkItem:hover {
     opacity: 0.7;
 }
@@ -392,21 +415,22 @@ section {
     font-size: 0.9em;
 }
 
-@media (max-width: 768px) {
-
-
-  .grid-container {
+@media (max-width: 540px) {
+.grid-container {
     grid-template-areas:
-      "box1  box2  box3  box6"
-      "box4  box4  box3  box6"
-      "box5  box7  box7  box10"
-      "box9  box7  box7  box8"
-      "box12 box12 box11 box11"
-      "box13 box13 box14 box14";
+      "box7  box7  box7  box7"
+      "box1  box1  box2  box2"
+      "box3  box3  box4  box4"
+      "box5  box5  box6  box6"
+      "box7  box7  box8  box8"
+      "box9  box9  box10 box10"
+      "box11 box11 box12 box12"
+      "box13 box13 box14 box14"
+      "box15 box15";
   }
 }
-
-/* @media (max-width: 540px) {
+/* 
+ @media (max-width: 540px) {
   .grid-container { 
     grid-template-areas:
     "box7  box7"
@@ -424,33 +448,23 @@ section {
   .grid-item-7 background {
     height: 250px;
   }
-} */
+} */ */
 
-/* @media (min-width: 640px) {
-    .statsContainer{
-        flex-direction: row;
-    }
-    
-    .stats {
-        gap: 0px;
-    }
-
-    .aboutMe {
-        width: 80%;
-        margin-right: auto;
-    }
-} */
 
 .mailButtonWrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .mailButton {
-    
-    padding: 0.3em 0.5em;
+    align-items: center;
+    padding: 0.5em 1em;
     border: 2px solid var(--secondary-color);
-    margin: 0 2em 2em 0;
+    width: 10vw;
+    height: auto;
+    min-width: 150px;
     border-radius: 0.5em;
     box-sizing: border-box;
     text-decoration: none;
