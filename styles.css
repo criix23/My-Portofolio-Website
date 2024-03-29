@@ -196,7 +196,7 @@ h5 {
 .grid-item p {
   font-weight: 500 !important;
   overflow: hidden;
-  texh-overflow: ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
