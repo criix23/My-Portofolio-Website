@@ -200,6 +200,10 @@ h5 {
   white-space: nowrap;
 }
 
+.grid-item-12 p {
+  font-size: clamp(12px, 2vw, 20px);
+}
+
 body {
     background: var(--bg-color);
     color: var(--primary-color);
