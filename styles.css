@@ -420,12 +420,12 @@ section {
     grid-template-areas:
       "box7  box7  box7  box7"
       "box1  box1  box2  box2"
-      "box3  box3  box4  box4"
-      "box5  box5  box6  box6"
-      "box8  box8  box9  box9"
-      "box10 box10 box11 box11"
+      "box3  box3  box6  box6"
+      "box9  box9  box10 box10"
+      "box4  box4  box5  box5"
+      "box15 box15 box11 box11"
+      "box8  box8  box14 box14"
       "box12 box12 box13 box13"
-      "box14 box14 box15 box15"
       ;
   }
 }
@@ -448,7 +448,7 @@ section {
   .grid-item-7 background {
     height: 250px;
   }
-} */ */
+} */ 
 
 
 .mailButtonWrapper {
