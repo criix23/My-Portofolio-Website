@@ -196,12 +196,6 @@ h5 {
 .grid-item p {
   font-weight: 500 !important;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.grid-item-12 p {
-  font-size: clamp(12px, 2vw, 20px);
 }
 
 body {
@@ -460,6 +454,14 @@ section {
     height: 250px;
   }
 } */ 
+
+@media (max-width: 540px) {
+  .grid-item-12 p,
+  .grid-item-13 p {
+    font-size: clamp(12px, 2vw, 20px);
+  }
+}
+
 
 
 .mailButtonWrapper {
