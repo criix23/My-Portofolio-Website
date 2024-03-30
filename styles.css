@@ -458,7 +458,7 @@ section {
 @media (max-width: 540px) and (orientation: landscape) {
   .grid-item-12 p,
   .grid-item-13 p {
-    font-size: 50%;
+    font-size: 50% !important;
   }
 }
 
