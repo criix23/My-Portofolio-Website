@@ -196,7 +196,6 @@ h5 {
 .grid-item p {
   font-weight: 500 !important;
   overflow: hidden;
-  font-size: clamp(10px, 1vw, 15px);
 }
 
 body {
@@ -434,6 +433,12 @@ section {
       "box12 box12 box13 box13"
       ;
   }
+  
+  .grid-item p {
+  font-weight: 500 !important;
+  overflow: hidden;
+  font-size: clamp(9px, 1vw, 14px);
+}
 }
 /* 
  @media (max-width: 540px) {
