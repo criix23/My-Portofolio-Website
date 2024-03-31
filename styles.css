@@ -196,7 +196,7 @@ h5 {
 .grid-item p {
   font-weight: 500 !important;
   overflow: hidden;
-  font-size: 8%;
+  font-size: 8% !important;
 }
 
 body {
@@ -433,23 +433,6 @@ section {
       "box8  box8  box14 box14"
       "box12 box12 box13 box13"
       ;
-  }
-  
-.grid-item p {
-  font-size: 20px;
- }
-}
-
-
-@media (max-width: 540px) and (orientation: landscape) {
-  .grid-item p {
-    font-size: 8px;
-  }
-}
-
-@media (max-width: 540px) and (orientation: portrait) {
-  .grid-item p {
-    font-size: 12px;
   }
 }
 
