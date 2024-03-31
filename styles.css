@@ -433,19 +433,21 @@ section {
       "box12 box12 box13 box13"
       ;
   }
-  
-  .grid-item p {
-  font-weight: 500 !important;
-  overflow: hidden;
-  
 }
-}
+
 
 @media (max-width: 540px) and (orientation: landscape) {
   .grid-item p {
-    font-size: clamp(9px, 1.2vw, 14px); /* Adjust the minimum and maximum font sizes as needed */
+    font-size: clamp(8px, 1vw, 14px);
   }
 }
+
+@media (max-width: 540px) and (orientation: portrait) {
+  .grid-item p {
+    font-size: clamp(14px, 1vw, 18px); /* Adjust the minimum and maximum font sizes as needed */
+  }
+}
+
 
 
 /* 
