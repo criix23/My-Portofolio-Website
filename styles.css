@@ -196,7 +196,7 @@ h5 {
 .grid-item p {
   font-weight: 500 !important;
   overflow: hidden;
-  font-size: clamp(8px, 1.5vw,16px);
+  font-size: 20%;
 }
 
 body {
@@ -455,16 +455,6 @@ section {
     height: 250px;
   }
 } */ 
-
-@media (max-width: 540px) and (orientation: landscape) {
-  .grid-item-12 p,
-  .grid-item-13 p {
-    font-size: 20% !important;
-  }
-}
-
-
-
 
 .mailButtonWrapper {
   display: flex;
