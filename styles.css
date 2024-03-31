@@ -196,7 +196,6 @@ h5 {
 .grid-item p {
   font-weight: 500 !important;
   overflow: hidden;
-  font-size: clamp(13px, 2vw, 18px);
 }
 
 body {
@@ -436,20 +435,20 @@ section {
   }
   
 .grid-item p {
-  font-size: clamp(10px, 1vw, 16px);
+  font-size: 20px;
  }
 }
 
 
 @media (max-width: 540px) and (orientation: landscape) {
   .grid-item p {
-    font-size: clamp(8px, 1vw, 14px);
+    font-size: 8px;
   }
 }
 
 @media (max-width: 540px) and (orientation: portrait) {
   .grid-item p {
-    font-size: clamp(14px, 1vw, 18px); /* Adjust the minimum and maximum font sizes as needed */
+    font-size: 12px;
   }
 }
 
