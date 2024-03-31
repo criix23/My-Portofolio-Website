@@ -86,7 +86,7 @@
   width: 50%;
 }
 
-.grid-item:hover {
+.grid-item:hover, .grid-item:active {
   cursor: pointer;
   background: #222831;
   box-shadow: inset -18px -18px 36px #0e1014,
