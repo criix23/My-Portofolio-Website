@@ -437,9 +437,17 @@ section {
   .grid-item p {
   font-weight: 500 !important;
   overflow: hidden;
-  font-size: clamp(9px, 1vw, 14px);
+  
 }
 }
+
+@media (max-width: 540px) and (orientation: landscape) {
+  .grid-item p {
+    font-size: clamp(9px, 1.2vw, 14px); /* Adjust the minimum and maximum font sizes as needed */
+  }
+}
+
+
 /* 
  @media (max-width: 540px) {
   .grid-container { 
