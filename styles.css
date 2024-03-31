@@ -196,7 +196,7 @@ h5 {
 .grid-item p {
   font-weight: 500 !important;
   overflow: hidden;
-  font-size: 5%;
+  font-size: 5% !important;
 }
 
 body {
