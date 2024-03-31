@@ -433,6 +433,10 @@ section {
       "box12 box12 box13 box13"
       ;
   }
+  
+.grid-item p {
+  font-size: clamp(10px, 1vw, 16px);
+ }
 }
 
 
