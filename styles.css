@@ -58,9 +58,9 @@
   gap: .5rem;
   grid-template-areas:
     "box9  box10  box3  box4  box4  box15  box5"
-    "box1  box1   box7  box7  box7  box13  box12"
-    "box2  box2   box7  box7  box7  box13  box12"
-    "box6  box6   box8  box8  box11  box14  box14"
+    "box1  box1   box7  box7  box7  box6   box8"
+    "box2  box2   box7  box7  box7  box6   box8"
+    "box13 box13  box12 box12 box11 box14  box14"
     ;
  
 }
@@ -195,8 +195,8 @@ h5 {
 
 .grid-item p {
   font-weight: 500 !important;
-  overflow: hidden;
-  font-size: 5% !important;
+  white-space: normal;
+  
 }
 
 body {
@@ -421,7 +421,7 @@ section {
     font-size: 0.9em;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 740px) {
 .grid-container {
     grid-template-areas:
       "box7  box7  box7  box7"
@@ -434,6 +434,7 @@ section {
       "box12 box12 box13 box13"
       ;
   }
+
 }
 
 
