@@ -277,7 +277,7 @@ section {
 
 .imgContainer img {
     display: inline;
-    margin:  auto;
+    margin: 0 auto;
     height: 100%;
     width: auto;
     aspect-ratio: 1/1;
