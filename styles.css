@@ -55,14 +55,26 @@
   margin: 1rem;
   display: grid;
   grid-auto-columns: 1fr;
-  gap: .5rem;
+  gap: 0.5rem;
   grid-template-areas:
     "box9  box10  box3  box4  box4  box15  box5"
     "box1  box1   box7  box7  box7  box13  box12"
     "box2  box2   box7  box7  box7  box13  box12"
-    "box6  box6   box8  box8  box11  box14  box14"
-    ;
- 
+    "box6  box6   box8  box8  box11  box14  box14";
+}
+
+@media (max-width: 540px) {
+  .grid-container {
+    grid-template-areas:
+      "box7  box7  box7  box7"
+      "box1  box1  box2  box2"
+      "box3  box3  box6  box6"
+      "box9  box9  box10 box10"
+      "box5  box5  box4  box4"
+      "box15 box15 box8  box8"
+      "box11 box11 box12 box12"
+      "box13 box13 box14 box14";
+    }
 }
 
 .grid-item {
@@ -150,7 +162,9 @@
   grid-area: box14;
 }
 
-
+.grid-item-15 {
+  grid-area: box15;
+}
 
 .linkIcons {
   font-size: 1.8em;
@@ -160,6 +174,7 @@ h1 {
   font-size: clamp(50px, 2vw, 80px);
   background: #CFE7FA;
 background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+background-clip: border-box;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 
@@ -179,6 +194,7 @@ h4 {
   font-size: 250%;
   background: #CFE7FA;
 background: linear-gradient(to right, #CFE7FA 0%, #6393C1 100%);
+background-clip: border-box;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
@@ -277,7 +293,7 @@ section {
 
 .imgContainer img {
     display: inline;
-    margin: 0 auto;
+    margin:  auto;
     height: 100%;
     width: auto;
     aspect-ratio: 1/1;
@@ -390,7 +406,7 @@ section {
 
 .linkContainer > a {
   display: flex;
-  align-items: ;
+  align-items: center;
 }
 
 .linkContainer>a>img {
@@ -415,22 +431,8 @@ section {
     font-size: 0.9em;
 }
 
-@media (max-width: 540px) {
-.grid-container {
-    grid-template-areas:
-      "box7  box7  box7  box7"
-      "box1  box1  box2  box2"
-      "box3  box3  box4  box4"
-      "box5  box5  box6  box6"
-      "box7  box7  box8  box8"
-      "box9  box9  box10 box10"
-      "box11 box11 box12 box12"
-      "box13 box13 box14 box14"
-      "box15 box15";
-  }
-}
 /* 
- @media (max-width: 540px) {
+ @media (max-width: 400px) {
   .grid-container { 
     grid-template-areas:
     "box7  box7"
@@ -440,15 +442,14 @@ section {
     "box7  box8"
     "box9  box10"
     "box11 box12"
-    "box13 box14";
+    "box13 box14"
+    "box15 box 15";
   }
-  .grid-item {
-    padding: .75rem 1rem;
-  }
+  
   .grid-item-7 background {
     height: 250px;
   }
-} */ */
+}  */
 
 
 .mailButtonWrapper {
